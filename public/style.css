@@ -1,0 +1,43 @@
+body{
+ /* image for background */
+}
+
+header, footer {
+  text-align: center;
+}
+
+.main {
+  width: 80%;
+  text-align: center;
+}
+
+.flexBox {   /*   This is the main container  */
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  flex: 1;
+}
+
+.bodyContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.nav{
+  order: -1;
+}
+
+@media (min-width:768px){
+  .bodyContainer {
+    flex-direction: row;
+    flex: 1;
+  }
+  .main {
+    flex: 1;
+  }
+  .nav, .aside {
+    flex: 0 0 12em;
+  }
+}
