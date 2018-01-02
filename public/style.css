@@ -11,7 +11,7 @@ header, footer {
   text-align: center;
 }
 
-.flexBox {   /*   This is the main container  */
+.bodyBox {   /*   This is the main container  */
   display: flex;
   min-height: 100vh;
   margin: 0;
@@ -19,18 +19,18 @@ header, footer {
   flex: 1;
 }
 
-.bodyContainer {
+.divContainer {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
-.nav{
+.navi{
   order: -1;
 }
 
 @media (min-width:768px){
-  .bodyContainer {
+  .divContainer {
     flex-direction: row;
     flex: 1;
   }

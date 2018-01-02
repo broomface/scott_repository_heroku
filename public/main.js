@@ -15,11 +15,11 @@ $('.edit').click(function(event) {   // set up click request for edit
 
   let id = $(this).data('id');
   let name = $(`#name${id}`).html();
-  let message = $(`#name${id}`).html();
+  let message = $(`#messages${id}`).html();
 
   $('#name').val(name);
   $('#message').val(message);
-  $('#edit-id').val(id);
+  $('#mod-id').val(id);
 
   $('#postButton').hide();  // DEFAULT HIDE THE POST BUTTON
   $('#editButton').show();  // DEFAULT SHOW EDIT BUTTON
@@ -63,7 +63,7 @@ $('#postButton').click(function (event) {  // setting up function with variables
 // BEGINNING OF PATCH REQUEST
 $('#editButton').click(function() {  // setting up the variables for the Patch
   event.preventDefault();
-  let id = $('#edit-id').val();
+  let id = $('#mod-id').val();
   let name = $('#name').val();
   let message = $('#message').val();
 
